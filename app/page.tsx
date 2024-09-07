@@ -38,7 +38,7 @@ export default function Home() {
               <Card item={item} key={index} />
             ))
           ) : (
-            <p className="text-gray-400">No albums found for "{query}"</p>
+            <p className="text-gray-400">No albums found for &quot;{query}&quot;</p>
           )}
         </div>
       </div>
