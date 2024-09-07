@@ -77,7 +77,7 @@ const Page = ({ params }: any) => {
                 <Playlist item={item} key={index} />
               ))
             ) : (
-              <p className="text-gray-400">No results found for "{query}"</p>
+           <p className="text-gray-400">No results found for &quot;{query}&quot;</p>
             )}
           </ul>
         </div>
