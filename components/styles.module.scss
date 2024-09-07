@@ -1,0 +1,148 @@
+.navbar_container {
+  background-color: #090909; /* Spotify's dark background */
+  padding: 1.5rem 2rem; /* Adjusted padding for better spacing */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+/* Logo */
+.nav_logo {
+  width: 150px; /* Reduced width for smaller screens */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Search bar */
+.search_bar {
+  flex: 1;
+  margin: 0 1.5rem; /* Slightly reduced margin for better spacing */
+  display: flex;
+  justify-content: center;
+  max-width: 450px; /* Slightly reduced maximum width for search bar */
+}
+
+.search_input {
+  width: 100%;
+  padding: 0.5rem 0.75rem; /* Slightly reduced padding */
+  padding-left: 3rem; /* Adjusted padding for left (icon space) */
+  padding-right: 5rem; /* Adjusted padding for right (button space) */
+  border: 1px solid #ccc;
+  border-radius: 1.25rem; /* Slightly smaller border radius */
+  background-color: #333;
+  color: white;
+  font-size: 1rem; /* Slightly reduced font size */
+}
+
+/* Navigation links */
+.nav_links {
+  display: flex;
+  gap: 1.25rem; /* Slightly reduced space between links */
+  align-items: center;
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+.links {
+  color: #ffffff; /* White text color */
+  text-transform: none; /* Normal text case */
+  font-size: 18px; /* Slightly reduced font size */
+  font-weight: 400; /* Slightly reduced font weight */
+  padding: 0.5rem 0.75rem; /* Slightly reduced padding */
+  border-radius: 20px; /* Slightly smaller border radius */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions */
+  cursor: pointer;
+
+  &:hover {
+    background-color: #ffffff; /* White background on hover */
+    color: #000000; /* Black text color on hover */
+  }
+}
+
+/* Specific styles for Sign Up and Log In links */
+.signup {
+  background-color: transparent; /* No background */
+  color: #ffffff; /* White text color */
+}
+
+.login {
+  background-color: #ffffff; /* White background */
+  color: #1db954; /* Spotify green text color */
+  font-weight: bold; /* Bold text */
+  padding: 0.5rem 1rem; /* Padding adjustment for green background */
+  border: 2px solid #1db954; /* Green border */
+  border-radius: 20px; /* Rounded corners */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions */
+
+  &:hover {
+    background-color: #1db954; /* Spotify green background on hover */
+    color: #ffffff; /* White text color on hover */
+  }
+}
+
+/* Media queries for responsiveness */
+
+/* For tablets and small screens (768px and below) */
+@media (max-width: 768px) {
+  .navbar_container {
+    padding: 1rem; /* Reduce padding */
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align items to the start */
+  }
+
+  .nav_logo {
+    width: 130px; /* Further reduce logo size */
+    margin-bottom: 1rem; /* Add margin below logo */
+  }
+
+  .search_bar {
+    margin: 1rem 0; /* Increase margin around search bar */
+    max-width: 100%; /* Allow search bar to take full width */
+  }
+
+  .nav_links {
+    justify-content: space-around; /* Distribute links evenly */
+    width: 100%; /* Make links take full width */
+  }
+
+  .links {
+    font-size: 16px; /* Reduce font size */
+    padding: 0.5rem 0.5rem; /* Adjust padding */
+  }
+}
+
+/* For mobile screens (480px and below) */
+@media (max-width: 480px) {
+  .navbar_container {
+    padding: 0.5rem; /* Further reduce padding */
+  }
+
+  .nav_logo {
+    width: 120px; /* Further reduce logo size */
+  }
+
+  .search_bar {
+    margin: 0.5rem 0; /* Reduce margin around search bar */
+    padding: 0.5rem; /* Adjust padding */
+  }
+
+  .search_input {
+    padding: 0.4rem 0.6rem; /* Reduce padding */
+    font-size: 0.9rem; /* Reduce font size */
+  }
+
+  .nav_links {
+    flex-direction: column; /* Stack links vertically */
+    align-items: flex-start; /* Align items to the start */
+    gap: 0.75rem; /* Reduce gap between links */
+  }
+
+  .links {
+    font-size: 14px; /* Reduce font size */
+    padding: 0.4rem 0.5rem; /* Adjust padding */
+  }
+
+  .login {
+    padding: 0.4rem 0.75rem; /* Adjust padding */
+    font-size: 14px; /* Reduce font size */
+  }
+}

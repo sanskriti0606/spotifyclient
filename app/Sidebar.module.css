@@ -1,0 +1,142 @@
+.sidebar {
+    width: 258px;
+    background: #030303;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    padding: 10px;
+    transition: transform 0.3s ease-in-out;
+    z-index: 10;
+  }
+  
+  .sidebarNav {
+    background: #111111;
+    border-radius: 10px;
+    padding: 20px 10px;
+    margin-bottom: 10px;
+  }
+  
+  .logo img {
+    width: 120px;
+  }
+  
+  .link {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #b3b3b3;
+    font-size: 16px;
+    font-weight: 600;
+    transition: color 0.3s;
+  }
+  
+  .link:hover {
+    color: #fff;
+  }
+  
+  .icon {
+    font-size: 20px;
+    margin-right: 10px;
+  }
+  
+  .library::after {
+    float: right;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 15px;
+  }
+  
+  .createPlaylist {
+    background: #3b3939;
+    padding: 30px 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .sidebarScroll {
+    height: 120px;
+    overflow-y: auto;
+  }
+  
+  .sidebarScroll::-webkit-scrollbar-thumb {
+    background: transparent;
+  }
+  
+  .sidebarScroll:hover::-webkit-scrollbar-thumb {
+    background: #5c5b5b;
+  }
+  
+  .privacy ul li a {
+    text-decoration: none;
+    color: #575656;
+    font-size: 12px;
+    font-weight: 600;
+    margin: 0 6px;
+  }
+  
+  .privacy ul li a:hover {
+    text-decoration: underline;
+    color: #bebcbc;
+  }
+  
+  .engBtn button {
+    padding: 10px 30px;
+    background: transparent;
+    border: 1px solid #818080;
+    border-radius: 20px;
+    color: #ffffff;
+    margin: 20px 0;
+  }
+  
+  .engBtn button:hover {
+    border: 1px solid #fff;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 1024px) {
+    .sidebar {
+      width: 250px;
+    }
+  
+    .logo img {
+      width: 100px;
+    }
+  
+    .link {
+      font-size: 14px;
+    }
+  
+    .icon {
+      font-size: 18px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .sidebar {
+      transform: translateX(-100%);
+      width: 100%;
+    }
+  
+    .sidebarOpen {
+      transform: translateX(0);
+    }
+  
+    .sidebarNav {
+      padding: 15px 5px;
+    }
+  
+    .logo img {
+      width: 80px;
+    }
+  
+    .link {
+      font-size: 12px;
+    }
+  
+    .icon {
+      font-size: 16px;
+    }
+  }
+  

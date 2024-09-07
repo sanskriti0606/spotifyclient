@@ -1,0 +1,164 @@
+/* playlist.module.scss */
+
+/* Section Styling */
+.sectionPlaylist {
+  padding: 10px;
+  background-color: #141313;
+  position: relative;
+}
+
+/* Container Styling */
+.container {
+  max-width: 1500px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* Main Heading Styling */
+.mainHeading {
+  font-size: 2.6rem;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #f6ecec;
+  line-height: 1.2;
+}
+
+/* Grid Layout for Playlists */
+.gridThreeCols {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 40px;
+}
+
+/* Card Styling */
+.card {
+  background: #1d1d1d;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(255, 254, 254, 0.2);
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+
+  &:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+}
+
+/* Card Image Styling */
+.cardImage img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Card Details Styling */
+.cardDetails {
+  padding: 8px;
+  color: #e3e3e3;
+}
+
+/* Playlist Title Styling */
+.playlistTitle {
+  font-size: 1rem;
+  margin-bottom: 4px;
+}
+
+/* Song Details Styling */
+.songDetails {
+  padding: 2px 0;
+  border-bottom: 1px solid #3a3a3a;
+}
+
+/* Song Title Styling */
+.songTitle {
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+/* Link Styling */
+.link {
+  color: #1db954;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+/* Back Button Styling */
+.backButton {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  padding: 8px 16px;
+  background-color: #154d29;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.backButton:hover {
+  background-color: #3ca661;
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 1200px) {
+  .mainHeading {
+    font-size: 2.2rem;
+    margin-bottom: 25px;
+  }
+
+  .gridThreeCols {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .mainHeading {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+
+  .gridThreeCols {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+  }
+
+  .cardImage img {
+    height: 150px;
+  }
+
+  .backButton {
+    top: 5px;
+    left: 5px;
+    padding: 6px 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .mainHeading {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+
+  .gridThreeCols {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .cardImage img {
+    height: 120px;
+  }
+
+  .backButton {
+    top: 2px;
+    left: 2px;
+    padding: 4px 8px;
+  }
+}
